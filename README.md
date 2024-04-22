@@ -14,7 +14,7 @@ O Bulletproof Checker é um projeto que visa facilitar a análise de páginas we
 
 ## Uso
 1. Execute o comando para verificar a implementação do padrão BulletProof em uma página web: `npm run bp-checker`
-2. Verifique o relatório gerado no diretório `reports`
+2. Verifique o relatório gerado no diretório `exports`
 
 ## Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
