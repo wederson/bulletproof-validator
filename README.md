@@ -8,12 +8,12 @@ O Bulletproof Checker é um projeto que visa facilitar a análise de páginas we
 - Exportação de relatórios detalhados sobre os resultados da verificação
 
 ## Instalação
-1. Clone o repositório: `git clone https://github.com/seu-usuario/bulletproof-checker.git`
+1. Clone o repositório: `git clone https://github.com/wederson/bulletproof-checker.git`
 2. Navegue até o diretório do projeto: `cd bulletproof-checker`
 3. Instale as dependências: `npm install`
 
 ## Uso
-1. Execute o comando para verificar a implementação do padrão BulletProof em uma página web: `node index.js verificar pagina.html`
+1. Execute o comando para verificar a implementação do padrão BulletProof em uma página web: `npm run bp-checker`
 2. Verifique o relatório gerado no diretório `reports`
 
 ## Contribuição
