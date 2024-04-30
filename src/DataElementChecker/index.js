@@ -47,7 +47,6 @@ class DataElementChecker {
     CheckValuePattern($) {
         $('[data-section], [data-element]').each((index, element) => {
             const dataAttr = $(element).attr('data-section') || $(element).attr('data-element');
-
             const pattern = new RegExp(this.bulletPattern);
 
             if (!pattern.test(dataAttr)) {
@@ -59,6 +58,17 @@ class DataElementChecker {
                 if ($(element).attr('data-section')) {
                     this.dataErrors.push(error);
                 } else {
+                    this.dataErrors.push(error);
+                }
+            }
+
+            if ($(element).attr('data-element')) {
+                if (!$(element).parents('[data-section]').length) {
+                    const error = {
+                        page: this.page,
+                        element: $(element).html(),
+                        error: 'Data section not found in parent data-element'
+                    };
                     this.dataErrors.push(error);
                 }
             }
